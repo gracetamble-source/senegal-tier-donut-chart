@@ -91,7 +91,7 @@ d3.csv("senegal_pie_chart.csv").then(data => {
       .attr("font-size", 16)
       .attr("font-weight", 600)
       .attr("fill", "#2E5C73")
-      .text("by tier");
+      .text("by MTF tier");
 
     const slices = chartG.selectAll("path")
       .data(pie(yearData), d => d.data.tier);
